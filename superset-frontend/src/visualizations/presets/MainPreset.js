@@ -40,6 +40,8 @@ import TableChartPlugin from '@superset-ui/plugin-chart-table';
 import TreemapChartPlugin from '@superset-ui/legacy-plugin-chart-treemap';
 import { WordCloudChartPlugin } from '@superset-ui/plugin-chart-word-cloud';
 import WorldMapChartPlugin from '@superset-ui/legacy-plugin-chart-world-map';
+import { HelloWorldChartPlugin } from '@superset-ui/plugin-chart-hello-world';
+
 import {
   AreaChartPlugin,
   BarChartPlugin,
@@ -104,6 +106,7 @@ export default class MainPreset extends Preset {
         new EchartsMixedTimeseriesChartPlugin().configure({
           key: 'mixed_timeseries',
         }),
+        new HelloWorldChartPlugin().configure({ key: 'hello_world' }),
         new HeatmapChartPlugin().configure({ key: 'heatmap' }),
         new HistogramChartPlugin().configure({ key: 'histogram' }),
         new HorizonChartPlugin().configure({ key: 'horizon' }),
